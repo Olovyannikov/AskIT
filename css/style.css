@@ -1,0 +1,551 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 2400px;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 2040px;
+}
+
+.flex {
+    display: flex;
+    list-style: none;
+}
+
+.header {
+    background: #000;
+}
+
+.header__logo {
+    width: 360px;
+    margin-left: 220px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+}
+
+ .logo {
+    width: 140px;
+    height: 170px;
+}
+.header__navigation {
+    width: 1560px;
+}
+
+ .header__navigation ul {
+     list-style: none;
+     font-family: 'Lato', Arial, sans-serif;
+     font-size: 38px;
+     align-items: center;
+     justify-content: space-between;
+     margin: 0;
+ }
+
+.header__navigation--main  a:hover {
+    font-weight: bold;
+    background: rgba(255, 255,255,.05);
+    padding: 80px 10px;
+    border-top: 2px solid #e8e9ea;
+}
+
+ .header__navigation--main {
+     width: 1200px;
+ }
+
+ .header__navigation a {
+     text-decoration: none;
+     color: #FFFFFF;
+ }
+
+ .header__navigation ul.header__navigation--user {
+     font-size: 18px;
+ }
+
+ul.header__navigation--user  {
+    position: relative;
+     width: 150px;
+     margin-top: 40px;
+    justify-content: flex-end;
+ }
+
+ul.header__navigation--user a:hover {
+    border-bottom: 1px solid #e8e9ea;
+}
+
+a.sign-in {
+    margin-right: 25px;
+}
+
+.header__navigation--user a.sign-in::before {
+    position: absolute;
+    content: '';
+    background: url("../img/sign-in.png");
+    width: 32px;
+    height: 34px;
+    display: inline-block;
+    top: 30px;
+}
+
+.header__navigation--user a.avatar::before {
+    position: absolute;
+    content: '';
+    background: url("../img/avatar.png");
+    width: 29px;
+    height: 33px;
+    display: inline-block;
+    top: 30px;
+    right: 20px;
+}
+
+.main {
+    position: relative;
+    background: url("../img/design-for-iphone.png") no-repeat 1740px 96%,
+            url("../img/iphone.png") no-repeat 1704px 206%,
+    url("../img/main-photo.png") 100% 100%;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    width: 561px;
+    height: 1144px;
+    display: block;
+    top: 0;
+}
+
+.main__content {
+    padding-top: 300px;
+}
+
+.main__heading {
+    position: relative;
+    font-size: 83px;
+    line-height: 93px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 90px;
+}
+
+.main__heading::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url("../img/heading-line.png");
+    width: 430px;
+    height: 20px;
+    right: -65px;
+}
+
+.main__text {
+    font-size: 50px;
+    font-family: 'PT Sans', Arial, serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 255px;
+}
+
+.main__buttons {
+    margin-bottom: 365px;
+    margin-left: 340px;
+}
+
+.main__buttons .btn {
+   font-family: "PT Sans", Arial,sans-serif;
+    font-size: 30px;
+    border: 1px solid #FFFFFF;
+    padding: 25px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.main__buttons .btn--join {
+    margin-right: 0;
+}
+
+.main__buttons input {
+    width: 180px;
+    height: 49px;
+    padding: 26px 30px;
+    padding-bottom: 12px;
+    margin-left: -3px;
+}
+
+.main__buttons input::placeholder {
+    color: #037693;
+    font-size: 30px;
+}
+
+.advantages {
+    margin-bottom: 85px;
+}
+
+.advantages__heading {
+    position: relative;
+    color: #037693;
+    font-size: 83px;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.advantages__heading::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url("../img/advantages-line.png");
+    width: 135px;
+    height: 20px;
+    bottom: -15px;
+}
+
+.advantages__list {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #037693;
+    margin: 0;
+}
+
+.advantages__list li::before {
+    content: '';
+    display: block;
+    background: url("../img/free-acc.png") no-repeat 50%;
+    width: 54px;
+    height: 86px;
+    border: 1px solid #037693;
+    padding: 40px 50px;
+    margin-left: 25%;
+}
+
+.advantages__list li:nth-child(2)::before {
+    background-image: url("../img/discuss-issue.png");
+}
+
+.interact {
+    background-color: #037693;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.interact__heading {
+    font-size: 83px;
+    color: #FFFFFF;
+    width: 600px;
+    padding-left: 50px;
+    margin-left: 190px;
+    font-weight: lighter;
+    padding-top: 90px;
+}
+
+.interact .can {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 12px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(-90deg);
+    padding-left: 50px;
+    left: 40px;
+    top: 210px;
+}
+
+.can::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    display: inline-block;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+}
+
+.interact__subtext {
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-left: 240px;
+    margin-bottom: 85px;
+}
+
+.interact__subtext::after {
+    content: '';
+    width: 330px;
+    height: 2px;
+    background-color: #FFFFFF;
+    display: inline-block;
+}
+
+.interact__text {
+    font-size: 25px;
+    color: #FFFFFF;
+    width: 925px;
+    padding-left: 50px;
+    margin-left: 190px;
+    padding-bottom: 65px;
+}
+
+.siderect {
+    position: relative;
+    list-style: none;
+}
+
+.siderect li {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: #f1b451;
+    padding: 10px;
+    border: 2px solid #ebb353;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    right: 0;
+}
+
+.siderect li:first-child {
+    right: 390px;
+    top: 130px;
+}
+
+.siderect li:nth-child(2) {
+    right: 180px;
+    top: 320px;
+}
+
+.siderect li:last-child {
+    right: 390px;
+    top: 510px;
+}
+
+.siderect__content {
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    font-size: 30px;
+    text-align: center;
+    transform: rotate(-45deg);
+    left: 35px;
+    top: 65px;
+}
+
+.ques::before {
+    display: block;
+    content: '';
+    background: url("../img/light-bulb.png");
+    width: 106px;
+    height: 106px;
+    margin-left: 25%;
+}
+
+ .mag::before {
+     display: block;
+     content: '';
+        background: url("../img/magnifying-glass.png");
+     width: 106px;
+     height: 106px;
+     margin-left: 25%;
+}
+
+.cont::before {
+    display: block;
+    content: '';
+    background: url("../img/contract.png");
+    width: 106px;
+    height: 106px;
+    margin-left: 25%;
+}
+
+.features__heading {
+    position: relative;
+    color: #037693;
+    font-size: 83px;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.features__heading::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url("../img/advantages-line.png");
+    width: 135px;
+    height: 20px;
+    bottom: -15px;
+}
+
+.features__list {
+    position: relative;
+width: 1600px;
+    flex-wrap: wrap;
+justify-content: center;
+font-size: 36px;
+font-weight: bolder;
+color: #037693;
+margin: 0 auto;
+ padding: 0;
+}
+
+.features__list li {
+    width: 380px;
+    text-align: center;
+    padding-bottom: 45px;
+    margin-right: 95px;
+}
+
+.features__list li:nth-child(1),
+.features__list li:nth-child(3),
+.features__list li:nth-child(2) {
+    border-bottom: 2px solid #037693;
+}
+
+.features__list li:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 170px;
+    bottom: 285px;
+    left: 990px;
+    background: url("../img/side-ribbon.png") no-repeat;
+}
+
+.features__list li:nth-child(5)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 170px;
+    bottom: 0px;
+    left: 990px;
+    background: url("../img/side-ribbon.png") no-repeat;
+}
+
+.features__list li:nth-child(1)::after {
+    content: '';
+position: absolute;
+display: inline-block;
+width: 6px;
+height: 170px;
+bottom: 285px;
+left: 510px;
+background: url("../img/side-ribbon.png") no-repeat;
+}
+
+.features__list li:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 170px;
+    bottom: 0px;
+    left: 510px;
+    background: url("../img/side-ribbon.png") no-repeat;
+}
+
+.features__list li::before {
+    content: '';
+    display: block;
+    background: url("../img/microphone.png") no-repeat 50%;
+    width: 48px;
+    height: 86px;
+    padding: 30px 50px;
+    margin-left: 35%;
+}
+
+.partners {
+    background-image: url("../img/partners.png");
+
+}
+
+.partners__heading {
+    position: relative;
+    color: #FFF;
+    font-size: 83px;
+    text-align: center;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 135px;
+}
+
+.partners__heading::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url("../img/advantages-line.png");
+    width: 135px;
+    height: 20px;
+    bottom: -15px;
+    right: 870px;
+    transform: rotate(180deg);
+}
+
+.partners__list {
+    font-size: 0;
+    padding: 0;
+    justify-content: space-between;
+    padding-bottom: 135px;
+    align-items: center;
+}
+
+.partners__list .mccan::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/clients-logos-mccann-black.png") no-repeat;
+    width: 196px;
+    height: 36px;
+}
+
+.partners__list .uw::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/clients-logos-un-women-black.png") no-repeat;
+    width: 160px;
+    height: 70px;
+}
+.partners__list .acc::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/customer-accenture copy 2.png") no-repeat;
+    width: 182px;
+    height: 52px;
+}
+.partners__list .cis::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/customer-cisco copy 2.png") no-repeat;
+    width: 110px;
+    height: 58px;
+}
+.partners__list .event::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/customer-eventbrite copy 2.png") no-repeat;
+    width: 180px;
+    height: 56px;
+}
+.partners__list .zapp::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/customer-zappos copy 2.png") no-repeat;
+    width: 144px;
+    height: 54px;
+}
+.partners__list .siem::before {
+    content: '';
+    display: inline-block;
+    background: url("../img/customer-siemens copy.png") no-repeat;
+    width: 190px;
+    height: 28px;
+}
